@@ -1,0 +1,631 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-weight: 100;
+}
+body{
+    background: #000;
+    overflow-x: hidden;
+    color: aliceblue;
+    font-family: 'Alexandria', sans-serif;
+}
+span{
+    font-weight: 500;
+}
+.OpenPage{
+    height: 73vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.OpenPage .headline{
+    width: 100%;
+    height: 5vh;
+}
+.OpenPage .headline ul {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.OpenPage .headline ul  li{
+    font-weight: 200;
+    font-size: 10px;
+    cursor: pointer;
+}
+.OpenPage::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 75%;  
+    opacity: .4; 
+    z-index: -1;
+    background: fixed url("img /axisBg.jpg");
+    background-size: cover;
+}
+.OpenPage  .txt{
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+}
+.OpenPage .txt h1{
+    text-transform: capitalize;
+    font-size: 85px;
+    width: 75%;
+    font-weight: 700;
+}
+.OpenPage .txt p{
+    width: 120px;
+    font-weight: 200;
+}
+.OpenPage .txt div{
+    animation-name: omaranmited;
+    padding-left: 10px;
+    animation-duration: 3s;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    border-left: 1px aliceblue solid;
+    
+}
+.ProjectsPage{
+    overflow-x: hidden;
+}
+.ProjectsPage .axis{
+    min-height: 110vh;
+    z-index: -1;
+    width: 100%;
+}
+.ProjectsPage .axis .imgs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ProjectsPage .axis .imgs .img {
+    width: 40vh;
+    position: absolute;
+    z-index: -1;
+    right: 900px;
+    bottom: -140px;
+    animation: imgrotaed 40s ease-in-out;
+}
+.ProjectsPage .axis .logo{
+    width: 70vh;
+    height: 20vh;
+    padding-top: 180px;
+}
+.ProjectsPage .axis .txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 20px 0px; 
+    height: 50vh;
+    width: 100%;
+}
+.ProjectsPage .axis .txt .txtcon{
+    width: 90%;
+    margin-top: 200px;
+    overflow: hidden;
+}
+.ProjectsPage .axis .txt .T {
+    margin-top: 30px;
+}
+.ProjectsPage .axis .txt .T p{
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 25px;
+    animation: typing 5s ease-in-out forwards;
+    list-style: 120px;
+ 
+}
+.ProjectsPage .axis .txt .ar{
+    text-align: right;
+}
+.ProjectsPage .axis .logomesges-1{
+    min-height: 170vh;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.ProjectsPage .axis .logomesges-1 div{
+    width: 50%;
+}
+.ProjectsPage .axis .logomesges-1 .Txt{
+    padding: 100px 0px 0px 60px;
+    position: absolute;
+    right: 0;
+}
+.ProjectsPage .axis .logomesges-1 .Txt h1{
+    font-size: 170px;
+    font-weight: 200;
+} 
+.ProjectsPage .axis .logomesges-1 .Txt h1 span{
+    font-weight: 100;
+    color: #1a1a1a;
+}
+.ProjectsPage .axis .logomesges-1 .Txt p{
+    width: 90%;
+    line-height: 25px;
+    animation: typing 3s ease-in-out;
+    margin: 30px 0px 20px 0px;
+}
+.ProjectsPage .axis .logomesges-1 .Txt img{
+    position: absolute;
+}
+.ProjectsPage .axis .logomesges-1 .imgerth {
+    height: 170vh;
+    overflow: hidden;
+    position: absolute;
+}
+.ProjectsPage .axis .logomesges-1 .imgerth img{
+    position: absolute;
+    left: -900px;
+    animation: imgrotaed 200s infinite ease-in-out;
+    width: 170vh;
+}
+.ProjectsPage .axis .logobotto{
+    width: 30vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.ProjectsPage .axis .logomesges-2{
+    min-height: 100vh;
+    display: flex;
+}
+.ProjectsPage .axis .logomesges-2 div{
+    width: 50%;
+}
+.ProjectsPage .axis .logomesges-2 .img {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 73px;
+    justify-content: center;
+}
+.ProjectsPage .axis .logomesges-2 .img img{
+    width: 60vh;
+}
+.ProjectsPage .axis .logomesges-2 .Txt {
+    padding: 100px 0px 0px 20px ;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.ProjectsPage .axis .logomesges-2 .Txt h1{
+    font-size: 520%;
+    /* width: 90%; */
+    font-weight: 300;
+}
+.ProjectsPage .axis .logomesges-2 .Txt p {
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+    line-height: 25px;
+    animation: typing 5s ease-in-out;
+    font-weight: 100;
+}
+.bigimg{
+    background: url("img /5.jpg");
+    min-height: 100vh;
+    background-size: cover;
+}
+.colors{
+    min-height: 100vh;
+    display: flex;
+}
+.colors div{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.colors div p{
+    font-weight: 300;
+}
+.colors .w {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+.golden , .letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.golden img , .letter img{
+    width: 110vh;
+}
+.typografy{
+    min-height: 200vh;
+}
+.typografy .img{
+    min-height: 120vh;
+    background-size: cover;
+    background: url("img /6.jpg");
+}
+.typografy .Txt{
+    font-family: "el messiri";
+    position: relative;
+    display: flex;
+}
+.typografy .Txt .elmessiri {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+.typografy .Txt .n{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typografy .Txt .n h1{
+    font-size: 430px;
+    height: 0v;
+}
+.typografy .Txt .elmessiri , .typografy .Txt .n{
+    width: 50%;
+    height: 80vh;
+}
+.typografy .Txt .n p {
+    font-weight: 100;
+    font-size: 12px;
+    width: 100%;
+    font-family: 'Alexandria', sans-serif;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+.nextup{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+}
+.nextup img{
+    width: 14vh;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+.nextup div{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.nextup .omarlogoimg{
+    padding-bottom: 20px;
+}
+.nextup .fl{
+    position: relative;
+}
+.nextup .fl div{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    transition: 0.5s;
+    height: .5vh;
+    /* border-radius: 0px 0px 200px 200px ; */
+}
+#hevest div{
+    top: 0;
+    background: #1a1a1a;
+}
+#lib div {
+    top: 0;
+    background:#283618;
+}
+#omar div {
+    bottom: 0;
+    background: linear-gradient(60deg , red 30% , blue 100%);
+}
+#axis div {
+    bottom: 0;
+    background: #000;
+}
+.nextup .ff{
+    position: absolute;
+    right: 0;
+
+}
+/* special */
+.contener{
+    background: #F4FBEA;
+    position: relative;
+    overflow: hidden; 
+    font-family: "IBM Plex Sans Arabic";
+}
+.contener .Sopenpage{
+    min-height: 100vh;
+    overflow: hidden;
+    background: url("img /sbg.svg");
+    background-size: cover;
+} 
+.contener .Sopenpage .logo{
+    position: absolute;
+    left: -30px;
+    top: 10%;
+    z-index: 2;
+}
+.contener .Sopenpage .man{
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    filter: blur(120px);
+}
+.contener .Sopenpage .txt{
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    padding: 100px 20px;
+    justify-content: space-between;
+    font-family: 'Alexandria', sans-serif;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+}
+.contener .Sopenpage .txt p{
+    font-weight:200;
+    width: 45%;
+    font-size: 20px;
+}
+.contener .Sopenpage .txt .ar{
+    padding-bottom: 23px;
+    text-align: right;
+    padding-right: 40px;
+}
+/* lib */
+.OpenPageLib{
+    min-height: 100vh;
+    background: #283618;
+    color: #bc6c25;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: fixed url("img /lib/libBg.jpg");
+    background-size: cover;
+}
+.first .bg{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: #283618;
+    opacity: 30%;
+    z-index: 0;
+}
+.first img{
+    position: absolute;
+    z-index: 2;
+    height: 40%;
+}
+.OpenPageLib .headline{
+    display : flex;
+    justify-content: space-between;
+    padding: 10px ;
+    color: #bc6c25;
+}
+.OpenPageLib .libDis {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+    background: linear-gradient(0deg , rgba(40, 54, 24,0.7) 35% , transparent 100%);
+    overflow: hidden;
+    color: #fefae0;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.OpenPageLib .libDis div{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    height: 10vh;
+    font-size: 7px;
+    padding: 20px;
+}
+.OpenPageLib .libDis div h1 {
+    width: 90%;
+}
+.OpenPageLib .libDis div h1 span{
+    font-size: 20px;
+    font-weight: 900;
+}
+.OpenPageLib .libDis .endis {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+.break {
+    position: relative;
+    min-height: 200vh;
+    background: #fefae0;
+}
+.grilimg{
+    min-height: 200vh;
+    width: 70%;
+    background:  url("img /lib/smart-woman-reading-book-library.jpg") ;
+    background-size: cover;
+}
+.break img {
+    position: absolute;
+    top: 0 ;
+    width: 36vh;
+    right: 20%;
+}
+.OpenPageLib .dic{
+    background: #fefae0;
+    overflow: hidden;
+    color: #283618;
+    display: flex;
+    min-height: 100vh;
+}
+.OpenPageLib .dic div {
+    width: 50%;
+}
+.OpenPageLib .dic .img {
+    height: 100vh;
+    align-items: center;
+    display:flex;
+}
+.OpenPageLib .dic .img img{
+    width: 50%;
+}
+.OpenPageLib .dic .txt {
+    display: flex;
+    padding-top: 33vh;
+    width: 80%;
+}
+.OpenPageLib .dic .txt img{
+    width: 10vh;
+    margin: 0px 20px;
+}
+.OpenPageLib .dic .txt .c {
+    width: 100%;
+}
+.OpenPageLib .dic .txt .c .tit{
+    width: 100%;
+    height: 10vh;
+    padding-left: 23vh;
+    display: flex;
+    align-items: center;
+}
+.OpenPageLib .dic .txt .c .tit h1{
+    font-size: 30px;
+    font-weight: 500;
+    /* width: 40%; */
+}
+.OpenPageLib .dic .txt .c .dicoflogo{
+    width: 99%;
+    padding-top: 5vh;
+}
+.OpenPageLib .dic .txt .c .dicoflogo h1{
+    font-size: 21px;
+    font-weight: 200;
+}
+.OpenPageLib .dic .txt .c .dicoflogo .er {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 1.5vh;
+}
+.OpenPageLib .dic2{
+    align-items: center;
+}
+.OpenPageLib .dic .min{
+    width: 100%;
+}
+.OpenPageLib .dic .min img{
+    width: 25vh;
+}
+.OpenPageLib .dic .min div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.OpenPageLib .dic .min div .left{
+    width: 28%;
+    border-radius: 0px 20px 20px 0px ;
+    left: 0;
+}
+.OpenPageLib .dic .min div h1{
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.OpenPageLib .dic .min .iconLogo{
+    height: 60vh;
+    margin: 0px 0px;
+}
+.OpenPageLib .dic .min div .L{
+    font-size: 100px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: #283618 2px;
+}
+.colorsDisplay{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.colorsDisplay .color{
+    height: 16vh;
+    position: relative;
+    width: 100%;
+}
+.colorsDisplay img{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 64vh;
+}
+.colorsDisplay .color h2 {
+    color: #fefae0;
+    position: absolute;
+    left: 40vh;
+    top: 10px;
+}
+.golden1 {
+    min-height: 100vh;
+    background: url("img /lib/logo-golden.png");
+    background-size: cover;
+}
+.golden2 {
+    min-height: 100vh;
+    background: url("img /lib/type-logo-golden.png");
+    background-size: cover;
+}
+.moukup {
+    min-height: 100vh;
+    background: url("img /lib/mpukup.png");
+    background-size: cover;
+}
+.tyopgrary{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fefae0;
+}
+.tyopgrary .t {
+    height: 80vh;
+}
+.tyopgrary .types{
+    position: absolute;
+    top: 0px;
+    width: 80vh;
+    left: 0px;
+}
+@keyframes imgrotaed{
+    50%{
+        transform: rotate(300deg);
+        right: 00px;
+    }
+}
+@keyframes omaranmited{
+    0% {
+        width: 0px;
+        margin-left: 0;
+     }
+     50%{
+         width: 0;
+         margin-left: 70px;
+     } 
+     100%{
+         width:  130px;
+         margin-left: 10px;
+     }
+}
+@keyframes typing {
+    from { line-height:70px;
+    opacity: 0%;}
+    to { line-height: 20=5px; 
+    opacity: 100%;}
+}
